@@ -18,23 +18,7 @@ OpenMP to parallelize per-pixel work within each node
 
 Hybrid MPI+OpenMP execution for multi-node, multi-core acceleration
 
-📂 Project Structure
-Project_Hybrid/
-│
-├── main_hybrid.cpp               # MPI initialization, distribution, timing, I/O
-├── threshold_hybrid.cpp          # Hybrid MPI+OpenMP thresholding core
-├── threshold_common.cpp          # Serial integral computation + shared utilities
-├── threshold.hpp                 # Parameters and shared declarations
-├── image_io.cpp                  # PGM reader/writer implementation
-│
-├── convert_to_pgm.py             # Convert JPG/PNG → PGM
-├── convert_to_jpg.py             # Convert PGM → JPG
-│
-├── pbs_Script.sh                 # Picocluster job submission script
-│
-├── sample_outputs/               # Example outputs from runs
-│
-└── README.md
+
 
 🖼️ Algorithm Summary
 Adaptive Thresholding Formula
@@ -156,6 +140,5 @@ MPI + OpenMP hybrid programming guides
 
 👩‍💻 Author
 
-Arpita Paul
-Kennesaw State University
-Parallel Programming Project — Hybrid Adaptive Thresholding
+Sanjoy Dev
+University of Alabama in Huntsville
